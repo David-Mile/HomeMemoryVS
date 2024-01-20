@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WSalotto</class>
+ <widget class="QWidget" name="WSalotto">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>799</width>
+    <height>598</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="scafCuboLBtn">
+   <property name="geometry">
+    <rect>
+     <x>79</x>
+     <y>153</y>
+     <width>91</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>scafCuboL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafCuboHBtn">
+   <property name="geometry">
+    <rect>
+     <x>169</x>
+     <y>83</y>
+     <width>81</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>scafCuboH</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafLBtn">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>204</y>
+     <width>501</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>scafL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafHBtn">
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>134</y>
+     <width>341</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>scafH</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafLib3Btn">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>80</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>scafLib3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafLib2Btn">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>150</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>scafLib2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafLib1Btn">
+   <property name="geometry">
+    <rect>
+     <x>670</x>
+     <y>220</y>
+     <width>71</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>scafLib1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoSxBtn">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>370</y>
+     <width>261</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoSx</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoDxBtn">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>370</y>
+     <width>341</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoDx</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back to OpenSpae</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="allObjsBtn">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>20</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>All Objects</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

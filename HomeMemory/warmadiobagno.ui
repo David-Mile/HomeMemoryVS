@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WArmadioBagno</class>
+ <widget class="QWidget" name="WArmadioBagno">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>780</width>
+    <height>658</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="scaf1Btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>60</y>
+     <width>80</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf2Btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>140</y>
+     <width>80</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf3Btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>220</y>
+     <width>80</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf4Btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>300</y>
+     <width>80</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf4</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf5Btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>380</y>
+     <width>80</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf5</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf6Btn">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>460</y>
+     <width>80</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf6</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="allObjsBtn">
+   <property name="geometry">
+    <rect>
+     <x>191</x>
+     <y>60</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>All Objects</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>60</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back to Bagno</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

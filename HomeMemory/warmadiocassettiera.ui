@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WArmadioCassettiera</class>
+ <widget class="QWidget" name="WArmadioCassettiera">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1100</width>
+    <height>667</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="scafLeft1Btn">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>140</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ScafLeft1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafLeft2Btn">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>190</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ScafLeft2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="appendiRightBtn">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>140</y>
+     <width>251</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AppendiRight</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafRight1Btn">
+   <property name="geometry">
+    <rect>
+     <x>439</x>
+     <y>340</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ScafRight1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassetto1Btn">
+   <property name="geometry">
+    <rect>
+     <x>439</x>
+     <y>430</y>
+     <width>251</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cassetto1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassetto2Btn">
+   <property name="geometry">
+    <rect>
+     <x>439</x>
+     <y>450</y>
+     <width>251</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cassetto2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafRight2Btn">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>370</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ScafRight2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafRight3Btn">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>400</y>
+     <width>251</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ScafRight3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassetto3Btn">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>470</y>
+     <width>251</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cassetto3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="appendiLeftBtn">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>290</y>
+     <width>251</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AppendiLeft</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafLeft3Btn">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>240</y>
+     <width>251</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ScafLeft3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="floorAppendiLeftBtn">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>470</y>
+     <width>251</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FloorAppendiLeft</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="floorAppendiRightBtn">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>320</y>
+     <width>251</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>FloorAppendiRight</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoLeftLBtn">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>430</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoLeftL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoLeftHBtn">
+   <property name="geometry">
+    <rect>
+     <x>690</x>
+     <y>370</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoLeftH</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoRightHBtn">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>370</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoRightH</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoRightLBtn">
+   <property name="geometry">
+    <rect>
+     <x>820</x>
+     <y>430</y>
+     <width>131</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoRightL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="allObjsBtn">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>50</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>All Objects</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>50</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back to Camera</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WRipostiglio</class>
+ <widget class="QWidget" name="WRipostiglio">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1024</width>
+    <height>699</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="scaf3Btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>160</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf4Btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>220</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf4</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf5Btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>280</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf5</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf6Btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>340</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf6</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf7Btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>400</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf7</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf8Btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>460</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf8</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf2Btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>100</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf1Btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>43</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf9Btn">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>520</y>
+     <width>161</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf9</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="floorBtn">
+   <property name="geometry">
+    <rect>
+     <x>269</x>
+     <y>580</y>
+     <width>311</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Floor</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back to Anticamera</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="allObjsBtn">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>60</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>All Objects</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WScrivaniaComodino</class>
+ <widget class="QWidget" name="WScrivaniaComodino">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1199</width>
+    <height>664</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>50</y>
+     <width>111</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back to Camera</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="allObjsBtn">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>50</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>All objects</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf1Btn">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>300</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf1</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf2Btn">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>340</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf2</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoLeftBtn">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>270</y>
+     <width>261</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoLeft</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoRightBtn">
+   <property name="geometry">
+    <rect>
+     <x>540</x>
+     <y>270</y>
+     <width>221</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CasseetoRight</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettinoBtn">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>270</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cassettino</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf3Btn">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>380</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf3</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf4Btn">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>410</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf4</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scaf5Btn">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>450</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Scaf5</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoHBtn">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>310</y>
+     <width>101</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoH</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoMBtn">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>370</y>
+     <width>101</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoM</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoLBtn">
+   <property name="geometry">
+    <rect>
+     <x>910</x>
+     <y>430</y>
+     <width>101</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoL</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

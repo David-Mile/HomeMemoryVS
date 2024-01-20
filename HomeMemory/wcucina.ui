@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>WCucina</class>
+ <widget class="QWidget" name="WCucina">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>844</width>
+    <height>629</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="cassettoHBtn">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>380</y>
+     <width>141</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoH</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoLBtn">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>400</y>
+     <width>141</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoL</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="cassettoBigBtn">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>420</y>
+     <width>141</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>CassettoBig</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="carrelloBtn">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>380</y>
+     <width>51</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Carrello</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="antaBigDxBtn">
+   <property name="geometry">
+    <rect>
+     <x>679</x>
+     <y>200</y>
+     <width>101</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AntaBigDx</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="antinaBtn">
+   <property name="geometry">
+    <rect>
+     <x>430</x>
+     <y>380</y>
+     <width>51</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Antina</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="antaAngBtn">
+   <property name="geometry">
+    <rect>
+     <x>389</x>
+     <y>200</y>
+     <width>101</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AntaAng</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="antaTrashBtn">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>380</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AntaTrash</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="antaScolBtn">
+   <property name="geometry">
+    <rect>
+     <x>289</x>
+     <y>200</y>
+     <width>101</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AntaScol</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="antaBigSxBtn">
+   <property name="geometry">
+    <rect>
+     <x>159</x>
+     <y>200</y>
+     <width>131</width>
+     <height>121</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>AntaBigSx</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="scafFrigBtn">
+   <property name="geometry">
+    <rect>
+     <x>39</x>
+     <y>200</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ScafFrig</string>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>230</y>
+     <width>121</width>
+     <height>261</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_2">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>380</y>
+     <width>131</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_3">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>380</y>
+     <width>31</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_4">
+   <property name="geometry">
+    <rect>
+     <x>480</x>
+     <y>380</y>
+     <width>111</width>
+     <height>111</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_5">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>200</y>
+     <width>51</width>
+     <height>101</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QGraphicsView" name="graphicsView_6">
+   <property name="geometry">
+    <rect>
+     <x>490</x>
+     <y>300</y>
+     <width>191</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="backBtn">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>121</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Back to OpenSpace</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="allObjsBtn">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>60</y>
+     <width>80</width>
+     <height>24</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>All Objects</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
