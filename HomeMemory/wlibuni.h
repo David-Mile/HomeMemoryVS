@@ -2,6 +2,7 @@
 #define WLIBUNI_H
 
 #include <QWidget>
+#include <QPushButton>
 
 namespace Ui {
 class WLibUni;
@@ -14,6 +15,8 @@ class WLibUni : public QWidget
 public:
     explicit WLibUni(QWidget *parent = nullptr);
     ~WLibUni();
+    void allButtonsActivator();
+    void allObjBtnDeactivator();
 
 signals:
     void backSignal();
@@ -31,6 +34,8 @@ public slots:
 
 private:
     Ui::WLibUni *ui;
+    void btnDeactivator(QPushButton *btn);
+    void btnDefaultColor(QPushButton *btn);
 };
 
 #endif // WLIBUNI_H

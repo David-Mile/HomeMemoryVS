@@ -30,7 +30,7 @@ public slots:
     void cassettoLeftSlot();
     void cassettoRightSlot();
     void cassettoHSlot();
-    void cassettoMSLot();
+    void cassettoMSlot();
     void cassettoLSlot();
 
 private:

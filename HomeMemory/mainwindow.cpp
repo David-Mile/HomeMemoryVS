@@ -38,7 +38,7 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(libuniSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(libuniSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setLibUni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(libuniSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->openspace,SIGNAL(libuniSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
+    //connect(ambienti->casa->sottoambienti->openspace,SIGNAL(libuniSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // salottoSignals
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setSalotto()));
@@ -64,6 +64,7 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
     connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(openSpaceSignal()),ambienti->casa->sottoambienti,SLOT(setOpenSpace()));
     connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(bagnoSignal()),ambienti->casa->sottoambienti,SLOT(setBagno()));
     connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(cameraSignal()),ambienti->casa->sottoambienti,SLOT(setCamera()));
+    connect(ambienti->casa->sovraposizioni->balcone, SIGNAL(cameraSignal()), ambienti->casa->sottoambienti, SLOT(setCamera()));
     // Ripostiglio signals
     connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(ripostiglioSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(ripostiglioSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setRipostiglio()));
@@ -127,7 +128,7 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
     connect(ambienti->casa->sovraposizioni->armadioBagno,SIGNAL(backSignal()),objmanager,SLOT(backEmitter()));
     connect(ambienti->casa->sovraposizioni->armadiettoLav,SIGNAL(backSignal()),objmanager,SLOT(backEmitter()));
     connect(ambienti->casa->sovraposizioni->balcone,SIGNAL(openSpaceSignal()),objmanager,SLOT(backEmitter()));
-    connect(ambienti->casa->sovraposizioni->balcone,SIGNAL(cameraSignal()),objmanager,SLOT(backEmitter()));
+    connect(ambienti->casa->sovraposizioni->balcone, SIGNAL(cameraSignal()), objmanager, SLOT(backEmitter()));
     connect(ambienti->casa->sovraposizioni->armadioCassettiera,SIGNAL(backSignal()),objmanager,SLOT(backEmitter()));
     connect(ambienti->casa->sovraposizioni->scrivaniaComodino,SIGNAL(backSignal()),objmanager,SLOT(backEmitter()));
     // Cantina

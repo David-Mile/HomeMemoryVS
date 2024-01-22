@@ -43,7 +43,7 @@ signals:
 
 public slots:
     void changeTextResizeBtn();
-    void tableFiller(int IdLoc, int IdSov);
+    void tableFiller(int IdLoc, int IdSov, bool isSaveBtn = false);
     void saveSlot();
     void deleteSlot();
     void addSlot();

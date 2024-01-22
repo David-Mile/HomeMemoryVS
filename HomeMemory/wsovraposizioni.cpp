@@ -55,6 +55,7 @@ WSovraPosizioni::WSovraPosizioni(QWidget *parent)
 void WSovraPosizioni::setLibUni()
 {
     stack->setCurrentWidget(scrollLibUni);
+    libuni->allObjsEmitter();
 }
 
 void WSovraPosizioni::setSalotto()

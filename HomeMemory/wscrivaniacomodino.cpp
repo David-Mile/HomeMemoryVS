@@ -68,7 +68,7 @@ void WScrivaniaComodino::cassettoHSlot()
 {
     emit positionSignal(86,10);
 }
-void WScrivaniaComodino::cassettoMSLot()
+void WScrivaniaComodino::cassettoMSlot()
 {
     emit positionSignal(87,10);
 }

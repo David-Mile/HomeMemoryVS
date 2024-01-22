@@ -1,0 +1,18 @@
+1 disabilitare tasti - nel search se non ci sono selected (medium priority)
+2 nel search quando si clicca un elemento nella combo box aggiugnerlo automaticamente senza fare + (low priority)
+
+5 aggiungere move to agli oggetti (medium priority)
+6 rivedere dimensioni widget con tabella a dx (medium priority)
+8 mettere tabella non modificabile in search (medium priority)
+
+10 check ridimesionamento bottoni con cambio tema (low priority)
+
+11 Save settings in config file.
+12 Note non vengono salvate se le inserisci dopo aver cliccato add
+14 se aggiungo una riga nella tabella non c'è il focus su di lei quidi devo scorrere con la rotella per trovarla in fondo.
+15 se passo con il cursore su una combobox e ruoto la rotella al posto di scorrere la tabella mi scorre la combobox. 
+16 aggiungere numero tot oggetti visualizzati
+17 Casa disabilitato se sono in casa.
+18 Se vado in un altra posizione devo checkare se ci sono cambiamenti.
+19 scrivere il nome nella message box quando ho dei duplicati.
+20 mettere il numero totale di oggetti. (in alto a destra)

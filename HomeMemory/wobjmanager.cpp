@@ -196,17 +196,24 @@ void WObjManager::toDelBtnFiller(int row)
 }
 
 //It fill the table
-void WObjManager::tableFiller(int IdLoc, int IdSov)
+void WObjManager::tableFiller(int IdLoc, int IdSov, bool isSaveBtn)
 {
+    // Update variable to handle buttons activation
+    clicked = false;
+
     // Check if there are changes in the table and if the user want to proceed.
     // When IdLoc is 0 it meas I am coming from sottoambienti so there I already checked
     // if I wanted to save my changes when I leave the previous table view.
-    clicked = false;
+    // When I call tableFiller from Save btn I don't want to check for changes, since I know there are changes
+    // due to the alfabetical order of the query that rearrenged the new rows just added.
     bool proceed = true;
-    if(IdLoc != 0)
+    if (!isSaveBtn)
     {
-        if(checkChanges())
-        proceed = tbIsChangedMb();
+        if (IdLoc != 0)
+        {
+            if (checkChanges())
+                proceed = tbIsChangedMb();
+        }
     }
 
     // Save current IdLoc and IdSov as private variable
@@ -540,8 +547,8 @@ void WObjManager::saveSlot()
     }
 
     // update row count and close db
-    if(m_rowDb == m_rowTb)
-        tableFiller(m_IdLoc,m_IdSov);
+    if (m_rowDb == m_rowTb)
+        tableFiller(m_IdLoc,m_IdSov,true);
     db.close();
 }
 
