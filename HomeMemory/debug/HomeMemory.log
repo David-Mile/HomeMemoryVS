@@ -1,17 +1,6 @@
 ﻿  Generate moc_predefs.h
-C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(249,5): warning MSB8064: Custom build for item "debug\moc_predefs.h.cbt" succeeded, but specified dependency "c:\users\miglio\onedrive - txt e-solutions s.p.a\documents\github\homememoryvs\homememory\debug\moc_predefs.h.cbt" does not exist. This may cause incremental build to work incorrectly.
-  Moc'ing wlibuni.h...
-  main.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(254,5): warning MSB8064: Custom build for item "debug\moc_predefs.h.cbt" succeeded, but specified dependency "c:\users\miglio\onedrive - txt e-solutions s.p.a\documents\github\homememoryvs\homememory\debug\moc_predefs.h.cbt" does not exist. This may cause incremental build to work incorrectly.
   mainwindow.cpp
-  wambienti.cpp
-  wcasa.cpp
-  wlibuni.cpp
-  wopenspace.cpp
   wsovraposizioni.cpp
 C:\Users\miglio\OneDrive - TXT e-solutions S.p.A\Documents\GitHub\HomeMemoryVS\HomeMemory\mainwindow.cpp(182,42): warning C4100: 'xClick': unreferenced formal parameter
-  moc_mainwindow.cpp
-  moc_wambienti.cpp
-  moc_wcasa.cpp
-  moc_wlibuni.cpp
-  moc_wsovraposizioni.cpp
   HomeMemory.vcxproj -> C:\Users\miglio\OneDrive - TXT e-solutions S.p.A\Documents\GitHub\HomeMemoryVS\HomeMemory\debug\HomeMemory.exe

@@ -4,6 +4,7 @@
 #include <QString>
 #include <QSqlDatabase>
 #include <QList>
+#include <QPushButton>
 
 
 class Global {
@@ -26,6 +27,9 @@ public:
 
     // Global Methods //
     QSqlDatabase openConnection();
+    void allButtonsActivator(QList<QPushButton*>* positionBtnList);
+    void btnDeactivator(QPushButton* btn);
+    void btnDefaultColor(QPushButton* btn);
 
 signals:
     void positionSignal(int IdLoc, int IdSov);

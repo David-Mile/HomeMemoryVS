@@ -4,6 +4,7 @@
 #include <QWidget>
 #include <QStackedLayout>
 
+#include "global.h"
 #include "wsottoambienti.h"
 #include "wsovraposizioni.h"
 
@@ -11,7 +12,7 @@ class WCasa : public QWidget
 {
     Q_OBJECT
 public:
-    explicit WCasa(QWidget *parent = nullptr);
+    explicit WCasa(Global *global, QWidget *parent = nullptr);
     WSottoAmbienti *sottoambienti;
     WSovraPosizioni *sovraposizioni;
     QStackedLayout *stack;
@@ -19,6 +20,9 @@ public:
 public slots:
     void setSovraposizioni();
     void setSottoAmbienti();
+
+private:
+    Global* g;
 
 };
 

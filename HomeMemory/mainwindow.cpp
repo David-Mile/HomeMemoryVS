@@ -5,7 +5,7 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
 {
     g = global;
 
-    ambienti = new WAmbienti(this);
+    ambienti = new WAmbienti(g,this);
     ambienti->setMinimumWidth(400);
     setCentralWidget(ambienti);
 
@@ -43,12 +43,12 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setSalotto()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
+    //connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // cucinaSignals
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(cucinaSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(cucinaSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setCucina()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(cucinaSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->openspace,SIGNAL(cucinaSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
+    //connect(ambienti->casa->sottoambienti->openspace,SIGNAL(cucinaSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // scarpieraSignals
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(scarpieraSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(scarpieraSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setScarpiera()));
@@ -255,6 +255,10 @@ void MainWindow::closeObjManager()
 
 void MainWindow::showSearchWidget()
 {
+    // Clear the table if search widget is closed
+    if (search->isHidden())
+        search->clearAll();
+    // Make sure search widget is visble on the screen
     search->hide();
     search->show();
 }

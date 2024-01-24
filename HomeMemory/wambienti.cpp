@@ -2,9 +2,10 @@
 
 
 
-WAmbienti::WAmbienti(QWidget *parent)
+WAmbienti::WAmbienti(Global *global, QWidget *parent)
     : QWidget{parent}
 {
+    g = global;
     stack = new QStackedLayout(this);
 
     logo = new WLogo(this);
@@ -12,7 +13,7 @@ WAmbienti::WAmbienti(QWidget *parent)
     scrollLogo->setWidget(logo);
     stack->addWidget(scrollLogo);
 
-    casa = new WCasa(this);
+    casa = new WCasa(g,this);
     stack->addWidget(casa);
 
     cantAmb = new WCantAmb(this);

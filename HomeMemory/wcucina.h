@@ -1,7 +1,11 @@
 #ifndef WCUCINA_H
 #define WCUCINA_H
 
+#include "global.h"
+
 #include <QWidget>
+#include <QPushButton>
+#include <QList>
 
 namespace Ui {
 class WCucina;
@@ -12,7 +16,7 @@ class WCucina : public QWidget
     Q_OBJECT
 
 public:
-    explicit WCucina(QWidget *parent = nullptr);
+    explicit WCucina(Global *global, QWidget *parent = nullptr);
     ~WCucina();
 
 signals:
@@ -37,6 +41,9 @@ public slots:
 
 private:
     Ui::WCucina *ui;
+    Global* g;
+    QList<QPushButton*>* m_positionBtnList;
+
 };
 
 #endif // WCUCINA_H

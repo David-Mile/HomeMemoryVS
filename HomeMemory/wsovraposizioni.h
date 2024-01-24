@@ -1,6 +1,7 @@
 #ifndef WSOVRAPOSIZIONI_H
 #define WSOVRAPOSIZIONI_H
 
+#include "global.h"
 #include "wlibuni.h"
 #include "wsalotto.h"
 #include "wcucina.h"
@@ -27,7 +28,7 @@ class WSovraPosizioni : public QWidget
 {
     Q_OBJECT
 public:
-    explicit WSovraPosizioni(QWidget *parent = nullptr);
+    explicit WSovraPosizioni(Global *global, QWidget *parent = nullptr);
     WLibUni *libuni;
     WSalotto *salotto;
     WCucina *cucina;
@@ -53,6 +54,7 @@ public slots:
     void setScrivaniaComodino();
 
 private:
+    Global* g;
     QHBoxLayout *horLayout;
     QTableWidget *table;
     QStackedLayout *stack;

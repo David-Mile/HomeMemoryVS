@@ -16,3 +16,4 @@
 18 Se vado in un altra posizione devo checkare se ci sono cambiamenti.
 19 scrivere il nome nella message box quando ho dei duplicati.
 20 mettere il numero totale di oggetti. (in alto a destra)
+21 Finire bottoni delle posizioni partendo la libuni.

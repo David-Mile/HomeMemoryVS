@@ -2,18 +2,19 @@
 
 
 
-WSovraPosizioni::WSovraPosizioni(QWidget *parent)
+WSovraPosizioni::WSovraPosizioni(Global *global, QWidget *parent)
     : QWidget(parent)
 {
+    g = global;
     horLayout = new QHBoxLayout(this);
     stack = new QStackedLayout(this);
-    libuni = new WLibUni();
+    libuni = new WLibUni(g);
     scrollLibUni = new QScrollArea(this);
     scrollLibUni->setWidget(libuni);
-    salotto = new WSalotto();
+    salotto = new WSalotto(g);
     scrollSalotto = new QScrollArea(this);
     scrollSalotto->setWidget(salotto);
-    cucina = new WCucina();
+    cucina = new WCucina(g);
     scrollCucina = new QScrollArea(this);
     scrollCucina->setWidget(cucina);
     scarpiera = new WScarpiera(this);
@@ -61,11 +62,13 @@ void WSovraPosizioni::setLibUni()
 void WSovraPosizioni::setSalotto()
 {
     stack->setCurrentWidget(scrollSalotto);
+    salotto->allObjsEmitter();
 }
 
 void WSovraPosizioni::setCucina()
 {
     stack->setCurrentWidget(scrollCucina);
+    cucina->allObjsEmitter();
 }
 
 void WSovraPosizioni::setScarpiera()

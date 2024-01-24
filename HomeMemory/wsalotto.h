@@ -1,6 +1,8 @@
 #ifndef WSALOTTO_H
 #define WSALOTTO_H
 
+#include "global.h"
+
 #include <QWidget>
 
 namespace Ui {
@@ -12,7 +14,7 @@ class WSalotto : public QWidget
     Q_OBJECT
 
 public:
-    explicit WSalotto(QWidget *parent = nullptr);
+    explicit WSalotto(Global *global, QWidget *parent = nullptr);
     ~WSalotto();
 
 signals:
@@ -33,6 +35,8 @@ public slots:
 
 private:
     Ui::WSalotto *ui;
+    Global* g;
+    QList<QPushButton*>* m_positionBtnList;
 };
 
 #endif // WSALOTTO_H

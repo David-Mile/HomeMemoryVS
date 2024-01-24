@@ -1,6 +1,7 @@
 #ifndef WAMBIENTI_H
 #define WAMBIENTI_H
 
+#include "global.h"
 #include "wcasa.h"
 #include "wcantamb.h"
 #include "wbox.h"
@@ -18,7 +19,7 @@ class WAmbienti : public QWidget
 {
     Q_OBJECT
 public:
-    explicit WAmbienti(QWidget *parent = nullptr);
+    explicit WAmbienti(Global *global, QWidget *parent = nullptr);
     WLogo *logo;
     WCasa *casa;
     WCantAmb *cantAmb;
@@ -39,6 +40,7 @@ public slots:
 signals:
 
 private:
+    Global* g;
     QVBoxLayout *vboxAmb;
     QHBoxLayout *hboxBtn;
     QScrollArea *scrollLogo;

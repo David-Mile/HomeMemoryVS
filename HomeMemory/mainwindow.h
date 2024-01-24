@@ -20,8 +20,6 @@ public:
     MainWindow(Global *global, QWidget *parent = nullptr);
     ~MainWindow();
 
-    Global *g;
-
     WLowBtns *lowBtns;
     WObjManager *objmanager;
     WAmbienti *ambienti;
@@ -41,6 +39,7 @@ private slots:
 
 
 private:
+    Global* g;
     QDockWidget* createDockWidget(QWidget *wid);
     void closeEvent(QCloseEvent *xClick);
 };

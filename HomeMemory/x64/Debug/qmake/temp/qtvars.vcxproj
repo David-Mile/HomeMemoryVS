@@ -13,7 +13,7 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <OutputDirectory>.\</OutputDirectory>
     <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
     <CharacterSet>NotSet</CharacterSet>
@@ -33,7 +33,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\miglio\AppData\Local\Temp\3q4gvc0t.0r5;C:\Qt\6.3.2\msvc2019_64\include;C:\Qt\6.3.2\msvc2019_64\include\QtWidgets;C:\Qt\6.3.2\msvc2019_64\include\QtGui;C:\Qt\6.3.2\msvc2019_64\include\QtSql;C:\Qt\6.3.2\msvc2019_64\include\QtCore;C:\Users\miglio\AppData\Local\Temp\3q4gvc0t.0r5;/include;C:\Qt\6.3.2\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\miglio\AppData\Local\Temp\tf430pbk.qih;C:\Qt\6.3.2\msvc2019_64\include;C:\Qt\6.3.2\msvc2019_64\include\QtWidgets;C:\Qt\6.3.2\msvc2019_64\include\QtGui;C:\Qt\6.3.2\msvc2019_64\include\QtSql;C:\Qt\6.3.2\msvc2019_64\include\QtCore;C:\Users\miglio\AppData\Local\Temp\tf430pbk.qih;/include;C:\Qt\6.3.2\msvc2019_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -permissive- -Zc:__cplusplus -Zc:externConstexpr -utf-8 %(AdditionalOptions)</AdditionalOptions>
       <AssemblerListingLocation>.\</AssemblerListingLocation>
       <BrowseInformation>false</BrowseInformation>

@@ -60,7 +60,6 @@ public slots:
 
 private:
     Ui::WSearch *ui;
-    void closeEvent(QCloseEvent *xClick);
     QSqlDatabase db;
     QString m_selColors[10] = {"","","","","","","","","",""};
     QString m_selTypes[10] = {"","","","","","","","","",""};

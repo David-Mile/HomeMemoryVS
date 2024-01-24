@@ -126,11 +126,6 @@ WSearch::~WSearch()
     delete ui;
 }
 
-void WSearch::closeEvent(QCloseEvent *xClick)
-{
-    clearAll();
-}
-
 void WSearch::themeSlot(bool isDark)
 {
     if(isDark)

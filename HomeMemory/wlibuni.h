@@ -1,8 +1,11 @@
 #ifndef WLIBUNI_H
 #define WLIBUNI_H
 
+#include "global.h"
+
 #include <QWidget>
 #include <QPushButton>
+#include <QList>
 
 namespace Ui {
 class WLibUni;
@@ -13,10 +16,8 @@ class WLibUni : public QWidget
     Q_OBJECT
 
 public:
-    explicit WLibUni(QWidget *parent = nullptr);
+    explicit WLibUni(Global *global, QWidget *parent = nullptr);
     ~WLibUni();
-    void allButtonsActivator();
-    void allObjBtnDeactivator();
 
 signals:
     void backSignal();
@@ -34,8 +35,8 @@ public slots:
 
 private:
     Ui::WLibUni *ui;
-    void btnDeactivator(QPushButton *btn);
-    void btnDefaultColor(QPushButton *btn);
+    Global* g;
+    QList<QPushButton*> *m_positionBtnList;
 };
 
 #endif // WLIBUNI_H
