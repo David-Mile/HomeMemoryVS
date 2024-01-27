@@ -1,6 +1,7 @@
 #ifndef WCANTAMB_H
 #define WCANTAMB_H
 
+#include "global.h"
 #include "wcantina.h"
 #include "wleftwall.h"
 #include "wfrontwall.h"
@@ -13,7 +14,7 @@ class WCantAmb : public QWidget
 {
     Q_OBJECT
 public:
-    explicit WCantAmb(QWidget *parent = nullptr);
+    explicit WCantAmb(Global *global, QWidget *parent = nullptr);
     WCantina *cantina;
     WLeftWall *leftWall;
     WFrontWall *frontWall;
@@ -28,6 +29,7 @@ public slots:
 
 private:
     QScrollArea *scrollCantina;
+    Global* g;
 
 };
 

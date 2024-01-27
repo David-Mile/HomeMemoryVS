@@ -1,6 +1,8 @@
 #ifndef WFRONTWALL_H
 #define WFRONTWALL_H
 
+#include "global.h"
+
 #include <QWidget>
 
 namespace Ui {
@@ -12,7 +14,7 @@ class WFrontWall : public QWidget
     Q_OBJECT
 
 public:
-    explicit WFrontWall(QWidget *parent = nullptr);
+    explicit WFrontWall(Global *global, QWidget *parent = nullptr);
     ~WFrontWall();
 
 signals:
@@ -31,6 +33,8 @@ public slots:
 
 private:
     Ui::WFrontWall *ui;
+    Global* g;
+    QList<QPushButton*>* m_positionBtnList;
 };
 
 #endif // WFRONTWALL_H

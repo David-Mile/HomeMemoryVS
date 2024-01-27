@@ -1,6 +1,8 @@
 #ifndef WARMADIETTOLAV_H
 #define WARMADIETTOLAV_H
 
+#include "global.h"
+
 #include <QWidget>
 
 namespace Ui {
@@ -12,7 +14,7 @@ class WArmadiettoLav : public QWidget
     Q_OBJECT
 
 public:
-    explicit WArmadiettoLav(QWidget *parent = nullptr);
+    explicit WArmadiettoLav(Global *global, QWidget *parent = nullptr);
     ~WArmadiettoLav();
 
 signals:
@@ -27,6 +29,8 @@ public slots:
 
 private:
     Ui::WArmadiettoLav *ui;
+    Global* g;
+    QList<QPushButton*>* m_positionBtnList;
 };
 
 #endif // WARMADIETTOLAV_H

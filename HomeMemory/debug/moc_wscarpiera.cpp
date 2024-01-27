@@ -49,7 +49,7 @@ static const qt_meta_stringdata_WScarpiera_t qt_meta_stringdata_WScarpiera = {
         QT_MOC_LITERAL(50, 14),  // "allObjsEmitter"
         QT_MOC_LITERAL(65, 9),  // "scafLSlot"
         QT_MOC_LITERAL(75, 9),  // "scafMSlot"
-        QT_MOC_LITERAL(85, 9),  // "csafHSlot"
+        QT_MOC_LITERAL(85, 9),  // "scafHSlot"
         QT_MOC_LITERAL(95, 9),  // "antaLSlot"
         QT_MOC_LITERAL(105, 9)   // "antaHSlot"
     },
@@ -62,7 +62,7 @@ static const qt_meta_stringdata_WScarpiera_t qt_meta_stringdata_WScarpiera = {
     "allObjsEmitter",
     "scafLSlot",
     "scafMSlot",
-    "csafHSlot",
+    "scafHSlot",
     "antaLSlot",
     "antaHSlot"
 };
@@ -119,7 +119,7 @@ void WScarpiera::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 2: _t->allObjsEmitter(); break;
         case 3: _t->scafLSlot(); break;
         case 4: _t->scafMSlot(); break;
-        case 5: _t->csafHSlot(); break;
+        case 5: _t->scafHSlot(); break;
         case 6: _t->antaLSlot(); break;
         case 7: _t->antaHSlot(); break;
         default: ;

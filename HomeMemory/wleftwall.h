@@ -1,6 +1,8 @@
 #ifndef WLEFTWALL_H
 #define WLEFTWALL_H
 
+#include "global.h"
+
 #include <QWidget>
 
 namespace Ui {
@@ -12,7 +14,7 @@ class WLeftWall : public QWidget
     Q_OBJECT
 
 public:
-    explicit WLeftWall(QWidget *parent = nullptr);
+    explicit WLeftWall(Global *global, QWidget *parent = nullptr);
     ~WLeftWall();
 
 signals:
@@ -35,6 +37,8 @@ public slots:
 
 private:
     Ui::WLeftWall *ui;
+    Global* g;
+    QList<QPushButton*>* m_positionBtnList;
 };
 
 #endif // WLEFTWALL_H

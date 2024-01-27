@@ -1,6 +1,8 @@
 #ifndef WRIPOSTIGLIO_H
 #define WRIPOSTIGLIO_H
 
+#include "global.h"
+
 #include <QWidget>
 
 namespace Ui {
@@ -12,7 +14,7 @@ class WRipostiglio : public QWidget
     Q_OBJECT
 
 public:
-    explicit WRipostiglio(QWidget *parent = nullptr);
+    explicit WRipostiglio(Global *global, QWidget *parent = nullptr);
     ~WRipostiglio();
 
 signals:
@@ -34,6 +36,8 @@ public slots:
 
 private:
     Ui::WRipostiglio *ui;
+    Global* g;
+    QList<QPushButton*>* m_positionBtnList;
 };
 
 #endif // WRIPOSTIGLIO_H

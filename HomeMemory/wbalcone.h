@@ -1,6 +1,8 @@
 #ifndef WBALCONE_H
 #define WBALCONE_H
 
+#include "global.h"
+
 #include <QWidget>
 
 namespace Ui {
@@ -12,7 +14,7 @@ class WBalcone : public QWidget
     Q_OBJECT
 
 public:
-    explicit WBalcone(QWidget *parent = nullptr);
+    explicit WBalcone(Global *global, QWidget *parent = nullptr);
     ~WBalcone();
 
 signals:
@@ -36,6 +38,8 @@ public slots:
 
 private:
     Ui::WBalcone *ui;
+    Global* g;
+    QList<QPushButton*>* m_positionBtnList;
 };
 
 #endif // WBALCONE_H

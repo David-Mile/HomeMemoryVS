@@ -38,27 +38,22 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(libuniSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(libuniSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setLibUni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(libuniSignal(int,int)),this,SLOT(openObjManager()));
-    //connect(ambienti->casa->sottoambienti->openspace,SIGNAL(libuniSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // salottoSignals
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setSalotto()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),this,SLOT(openObjManager()));
-    //connect(ambienti->casa->sottoambienti->openspace,SIGNAL(salottoSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // cucinaSignals
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(cucinaSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(cucinaSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setCucina()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(cucinaSignal(int,int)),this,SLOT(openObjManager()));
-    //connect(ambienti->casa->sottoambienti->openspace,SIGNAL(cucinaSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // scarpieraSignals
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(scarpieraSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(scarpieraSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setScarpiera()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(scarpieraSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->openspace,SIGNAL(scarpieraSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // BalconeSignals
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(balconeSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(balconeSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setBalcone()));
     connect(ambienti->casa->sottoambienti->openspace,SIGNAL(balconeSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->openspace,SIGNAL(balconeSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
 
     // Connects signals from Anticamera
     connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(openSpaceSignal()),ambienti->casa->sottoambienti,SLOT(setOpenSpace()));
@@ -69,7 +64,6 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
     connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(ripostiglioSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(ripostiglioSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setRipostiglio()));
     connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(ripostiglioSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->anticamera,SIGNAL(ripostiglioSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
 
     // Connects signals from Bagno
     connect(ambienti->casa->sottoambienti->bagno,SIGNAL(anticameraSignal()),ambienti->casa->sottoambienti,SLOT(setAnticamera()));
@@ -77,12 +71,10 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
     connect(ambienti->casa->sottoambienti->bagno,SIGNAL(armadioBagnoSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->bagno,SIGNAL(armadioBagnoSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setArmadioBagno()));
     connect(ambienti->casa->sottoambienti->bagno,SIGNAL(armadioBagnoSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->bagno,SIGNAL(armadioBagnoSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // ArmadiettoLav signals
     connect(ambienti->casa->sottoambienti->bagno,SIGNAL(armadiettoLavSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->bagno,SIGNAL(armadiettoLavSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setArmadiettoLav()));
     connect(ambienti->casa->sottoambienti->bagno,SIGNAL(armadiettoLavSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->bagno,SIGNAL(armadiettoLavSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
 
     // Connects signals from Camera
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(anticameraSignal()),ambienti->casa->sottoambienti,SLOT(setAnticamera()));
@@ -90,17 +82,14 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(balconeSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(balconeSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setBalcone()));
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(balconeSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->camera,SIGNAL(balconeSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // ArmadioCassettieraSignals
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(armadioCassettieraSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(armadioCassettieraSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setArmadioCassettiera()));
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(armadioCassettieraSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->camera,SIGNAL(armadioCassettieraSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // ScrivaniaComodinoSignals
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(scrivaniaComodinoSignal(int,int)),ambienti->casa,SLOT(setSovraposizioni()));
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(scrivaniaComodinoSignal(int,int)),ambienti->casa->sovraposizioni,SLOT(setScrivaniaComodino()));
     connect(ambienti->casa->sottoambienti->camera,SIGNAL(scrivaniaComodinoSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->casa->sottoambienti->camera,SIGNAL(scrivaniaComodinoSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
 
 
     // Connects signals from Balcone (It is a SovraPosizione but it has also the "power" of a SottoAmbiente)
@@ -111,11 +100,9 @@ MainWindow::MainWindow(Global *global,QWidget *parent)
     // LeftWallSignal
     connect(ambienti->cantAmb->cantina,SIGNAL(leftWallSignal(int,int)),ambienti->cantAmb,SLOT(setLeftWall()));
     connect(ambienti->cantAmb->cantina,SIGNAL(leftWallSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->cantAmb->cantina,SIGNAL(leftWallSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
     // FrontWallSignal
     connect(ambienti->cantAmb->cantina,SIGNAL(frontWallSignal(int,int)),ambienti->cantAmb,SLOT(setFrontWall()));
     connect(ambienti->cantAmb->cantina,SIGNAL(frontWallSignal(int,int)),this,SLOT(openObjManager()));
-    connect(ambienti->cantAmb->cantina,SIGNAL(frontWallSignal(int,int)),objmanager,SLOT(tableFiller(int,int)));
 
 
     // Back signals to ObjManager to check for changes in the table

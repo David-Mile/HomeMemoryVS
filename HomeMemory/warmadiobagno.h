@@ -1,6 +1,8 @@
 #ifndef WARMADIOBAGNO_H
 #define WARMADIOBAGNO_H
 
+#include "global.h"
+
 #include <QWidget>
 
 namespace Ui {
@@ -12,7 +14,7 @@ class WArmadioBagno : public QWidget
     Q_OBJECT
 
 public:
-    explicit WArmadioBagno(QWidget *parent = nullptr);
+    explicit WArmadioBagno(Global *global, QWidget *parent = nullptr);
     ~WArmadioBagno();
 
 signals:
@@ -30,6 +32,8 @@ public slots:
 
 private:
     Ui::WArmadioBagno *ui;
+    Global* g;
+    QList<QPushButton*>* m_positionBtnList;
 };
 
 #endif // WARMADIOBAGNO_H

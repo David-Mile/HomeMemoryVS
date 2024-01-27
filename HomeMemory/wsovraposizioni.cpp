@@ -17,25 +17,25 @@ WSovraPosizioni::WSovraPosizioni(Global *global, QWidget *parent)
     cucina = new WCucina(g);
     scrollCucina = new QScrollArea(this);
     scrollCucina->setWidget(cucina);
-    scarpiera = new WScarpiera(this);
+    scarpiera = new WScarpiera(g);
     scrollScarpiera = new QScrollArea(this);
     scrollScarpiera->setWidget(scarpiera);
-    ripostiglio = new WRipostiglio(this);
+    ripostiglio = new WRipostiglio(g);
     scrollRipostiglio = new QScrollArea(this);
     scrollRipostiglio->setWidget(ripostiglio);
-    armadioBagno = new WArmadioBagno(this);
+    armadioBagno = new WArmadioBagno(g);
     scrollArmadioBagno = new QScrollArea(this);
     scrollArmadioBagno->setWidget(armadioBagno);
-    armadiettoLav = new WArmadiettoLav(this);
+    armadiettoLav = new WArmadiettoLav(g);
     scrollArmadiettoLav = new QScrollArea(this);
     scrollArmadiettoLav->setWidget(armadiettoLav);
-    balcone = new WBalcone(this);
+    balcone = new WBalcone(g);
     scrollBalcone = new QScrollArea(this);
     scrollBalcone->setWidget(balcone);
-    armadioCassettiera = new WArmadioCassettiera(this);
+    armadioCassettiera = new WArmadioCassettiera(g);
     scrollArmadioCassettiera = new QScrollArea(this);
     scrollArmadioCassettiera->setWidget(armadioCassettiera);
-    scrivaniaComodino = new WScrivaniaComodino(this);
+    scrivaniaComodino = new WScrivaniaComodino(g);
     scrollScrivaniaComodino = new QScrollArea(this);
     scrollScrivaniaComodino->setWidget(scrivaniaComodino);
     stack->addWidget(scrollLibUni);
@@ -74,34 +74,41 @@ void WSovraPosizioni::setCucina()
 void WSovraPosizioni::setScarpiera()
 {
     stack->setCurrentWidget(scrollScarpiera);
+    scarpiera->allObjsEmitter();
 }
 
 void WSovraPosizioni::setRipostiglio()
 {
     stack->setCurrentWidget(scrollRipostiglio);
+    ripostiglio->allObjsEmitter();
 }
 
 void WSovraPosizioni::setArmadioBagno()
 {
     stack->setCurrentWidget(scrollArmadioBagno);
+    armadioBagno->allObjsEmitter();
 }
 
 void WSovraPosizioni::setArmadiettoLav()
 {
     stack->setCurrentWidget(scrollArmadiettoLav);
+    armadiettoLav->allObjsEmitter();
 }
 
 void WSovraPosizioni::setBalcone()
 {
     stack->setCurrentWidget(scrollBalcone);
+    balcone->allObjsEmitter();
 }
 
 void WSovraPosizioni::setArmadioCassettiera()
 {
     stack->setCurrentWidget(scrollArmadioCassettiera);
+    armadioCassettiera->allObjsEmitter();
 }
 
 void WSovraPosizioni::setScrivaniaComodino()
 {
     stack->setCurrentWidget(scrollScrivaniaComodino);
+    scrivaniaComodino->allObjsEmitter();
 }

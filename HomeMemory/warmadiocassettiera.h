@@ -1,6 +1,8 @@
 #ifndef WARMADIOCASSETTIERA_H
 #define WARMADIOCASSETTIERA_H
 
+#include "global.h"
+
 #include <QWidget>
 
 namespace Ui {
@@ -12,7 +14,7 @@ class WArmadioCassettiera : public QWidget
     Q_OBJECT
 
 public:
-    explicit WArmadioCassettiera(QWidget *parent = nullptr);
+    explicit WArmadioCassettiera(Global *global, QWidget *parent = nullptr);
     ~WArmadioCassettiera();
 
 signals:
@@ -41,6 +43,8 @@ public slots:
 
 private:
     Ui::WArmadioCassettiera *ui;
+    Global* g;
+    QList<QPushButton*>* m_positionBtnList;
 };
 
 #endif // WARMADIOCASSETTIERA_H

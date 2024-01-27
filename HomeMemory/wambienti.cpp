@@ -16,7 +16,7 @@ WAmbienti::WAmbienti(Global *global, QWidget *parent)
     casa = new WCasa(g,this);
     stack->addWidget(casa);
 
-    cantAmb = new WCantAmb(this);
+    cantAmb = new WCantAmb(g);
     stack->addWidget(cantAmb);
 
     box = new WBox(this);
